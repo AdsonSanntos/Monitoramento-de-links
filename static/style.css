@@ -1,0 +1,177 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Helvetica', Arial, sans-serif; /* Define a fonte principal, com fallbacks */
+    background-color: #228B22; /* Fundo verde escuro para toda a página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    color: white; /* Cor do texto padrão: branco */
+    height: 100vh; /* Altura total da viewport (tela inteira) */
+    overflow: hidden; /* Impede rolagem na página principal */
+}
+ 
+/* Estilos para o cabeçalho da página */
+.header {
+    text-align: center; /* Centraliza o texto */
+    padding: 8px; /* Espaçamento interno reduzido */
+    background-color: #228B22; /* Fundo verde igual ao body */
+    color: yellow; /* Cor do texto: amarelo */
+    font-size: 20px; /* Tamanho da fonte reduzido */
+    margin: 0; /* Remove margens */
+}
+ 
+/* Container principal que organiza o layout em flexbox */
+.main-container {
+    display: flex; /* Usa flexbox para layout horizontal */
+    height: calc(100vh - 40px); /* Altura calculada para ocupar o resto da tela, descontando o header */
+    padding: 5px; /* Espaçamento interno pequeno */
+    gap: 5px; /* Espaço entre os elementos filhos */
+}
+ 
+/* Container para o mapa, ocupa mais espaço */
+.map-container {
+    flex: 2; /* Ocupa 2 partes do espaço flexível (maior que o direito) */
+    height: 100%; /* Altura total do container */
+    border: 2px solid #4682B4; /* Borda azul acinzentada */
+    border-radius: 5px; /* Cantos arredondados */
+}
+ 
+/* Estilos específicos para o elemento do mapa (provavelmente um div com id 'map') */
+#map {
+    width: 100%; /* Largura total do container pai */
+    height: 100%; /* Altura total do container pai */
+}
+ 
+/* Container direito, para listas e seções */
+.right-container {
+    flex: 1; /* Ocupa 1 parte do espaço flexível */
+    display: flex; /* Flexbox vertical para organizar seções */
+    flex-direction: column; /* Direção vertical */
+    background-color: #f0f8ff; /* Fundo azul claro */
+    border: 2px solid #4682B4; /* Borda azul acinzentada */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    overflow-y: hidden; /* Impede rolagem vertical no container */
+}
+ 
+/* Seção para links offline, ocupa menos espaço */
+.offline-links-section {
+    flex: 3; /* Ocupa 1 parte do espaço flexível no container direito */
+    border-bottom: 1px solid #4682B4; /* Linha separadora inferior */
+    padding-bottom: 10px; /* Espaçamento inferior */
+    margin-bottom: 10px; /* Margem inferior */
+   
+    max-height: 200px; /* Altura máxima para limitar o espaço */
+}
+ 
+/* Lista de links offline, organizada verticalmente */
+.offline-links-list {
+    display: flex; /* Flexbox para organizar itens */
+    flex-direction: column; /* Direção vertical */
+    gap: 5px; /* Espaço entre itens */
+    height: 100%; /* Altura total da lista */
+}
+ 
+/* Estilos para cada item de link offline */
+.offline-link-item {
+    background-color: #ffebee; /* Fundo vermelho claro */
+    border: 1px solid #d32f2f; /* Borda vermelha */
+    border-radius: 3px; /* Cantos levemente arredondados */
+    padding: 8px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #d32f2f; /* Cor do texto: vermelho */
+    word-break: break-all; /* Quebra palavras longas, como IPs */
+}
+ 
+/* Título da seção de links offline */
+.offline-links-section h2 {
+    color: #d32f2f; /* Cor vermelha para o título */
+    text-align: center; /* Centralizado */
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 5px 0; /* Margens superior e inferior */
+}
+ 
+/* Seção para todas as unidades, ocupa mais espaço */
+.all-units-section {
+    flex: 2; /* Ocupa 3 partes do espaço flexível */
+}
+ 
+/* Título da seção de todas as unidades */
+.all-units-section h2 {
+    color: #4682B4; /* Cor azul acinzentada */
+    text-align: center; /* Centralizado */
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 5px 0; /* Margens */
+}
+ 
+/* Lista de unidades, organizada verticalmente */
+.all-units-list {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical */
+    gap: 5px; /* Espaço entre itens */
+}
+ 
+/* Estilos para cada item de unidade */
+.unit-item {
+    background-color: white; /* Fundo branco */
+    border: 1px solid #4682B4; /* Borda azul */
+    border-radius: 3px; /* Cantos arredondados */
+    padding: 5px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão para indicar clicável */
+}
+ 
+/* Cabeçalho dentro de cada unidade, com layout flexível */
+.unit-header {
+    display: flex; /* Flexbox horizontal */
+    justify-content: space-between; /* Espaça itens entre si */
+    align-items: center; /* Alinha verticalmente ao centro */
+    font-weight: bold; /* Texto em negrito */
+    color: #4682B4; /* Cor azul */
+    font-size: 16px; /* Tamanho da fonte */
+}
+ 
+/* Links dentro de uma unidade, inicialmente ocultos */
+.unit-links {
+    display: none; /* Oculto por padrão */
+    margin-top: 5px; /* Margem superior */
+    padding-left: 10px; /* Recuo à esquerda */
+}
+ 
+/* Classe para mostrar os links quando ativada */
+.unit-links.show {
+    display: block; /* Torna visível */
+}
+ 
+/* Estilos para cada item de link dentro de uma unidade */
+.link-item {
+    font-size: 14px; /* Tamanho da fonte */
+    margin-left: 10px; /* Margem esquerda para recuo */
+}
+ 
+/* Classe para indicar status online */
+.online {
+    color: green; /* Cor verde */
+}
+ 
+/* Classe para indicar status offline */
+.offline {
+    color: red; /* Cor vermelha */
+    font-weight: bold; /* Negrito */
+}
+ 
+/* Classe para animação de piscar */
+.blink {
+    animation: blink 0.5s infinite; /* Animação infinita de piscar a cada 0.5s */
+}
+ 
+/* Definição da animação de piscar */
+@keyframes blink {
+    0%, 100% { opacity: 1; } /* Opacidade total no início e fim */
+    50% { opacity: 0.3; } /* Opacidade reduzida no meio */
+}
+ 
+/* Classe para unidade selecionada */
+.selected-unit {
+    background-color: #e3f2fd; /* Fundo azul claro */
+    border: 2px solid #1976d2; /* Borda azul mais escura */
+}

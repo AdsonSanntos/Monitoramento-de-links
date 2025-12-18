@@ -1,0 +1,31 @@
+LINK MONITOR
+
+Descrição:
+Projeto de monitoramento de links de rede com detecção de indisponibilidade e
+notificações automáticas via WhatsApp.
+
+Arquitetura:
+- Backend principal em Python (Flask)
+- Serviço auxiliar em Node.js para integração com WhatsApp Web
+- Interface web simples para visualização de status
+
+Funcionamento geral:
+O sistema executa verificações periódicas de conectividade (ping) para múltiplos
+links configurados. Cada link é monitorado de forma independente e paralela.
+
+Quando um link apresenta falha contínua acima de um tempo definido, o sistema:
+- Registra o estado offline
+- Evita alertas repetidos
+- Envia notificação automática via WhatsApp
+
+Quando o link volta a responder:
+- Remove o status de falha
+- Envia notificação de recuperação
+
+O serviço Node.js atua apenas como gateway de mensagens, mantendo a sessão
+do WhatsApp e expondo endpoints HTTP para envio e status.
+
+Observações:
+Este repositório contém apenas o código-fonte.
+Configurações, dependências e ambiente de execução ficam a critério de quem
+utilizar o projeto.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Links - Cibra</title>
+    <link rel="icon" href="/static/img/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="header">
+        <h3 id="">Monitoramento de Links</h3>
+    </div>
+    <div class="main-container">
+        <div class="map-container" id="map"></div>
+        <div class="right-container">
+            <div class="offline-links-section">
+    <h2>Links Offline</h2>
+    <div class="offline-links-list" id="offline-links-list">
+        <!-- Os links offline serão inseridos aqui -->
+    </div>
+</div>
+ 
+            <div class="all-units-section">
+                <h2>Todas as Unidades</h2>
+                <div class="all-units-list" id="all-units-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
