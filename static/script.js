@@ -4,97 +4,84 @@ const UNITS = {
         lat: -3.1190,
         lng: -60.0217,
         links: {
-            "Provedor A": "189.80.187.242",
-            "Provedor B": "189.201.200.86",
-            "Provedor C": "187.63.120.34"
+     
         }
     },
     "Belém": {
         lat: -1.4558,
         lng: -48.4902,
         links: {
-            "Provedor D": "189.52.251.250",
-            "Provedor E": "200.254.48.18",
-            "Provedor F": "200.223.102.114"
+           
         }
     },
     "Fortaleza": {
         lat: -3.7172,
         lng: -38.5433,
         links: {
-            "Provedor G": "201.16.192.121",
-            "Provedor H": "200.243.27.66"
+            
         }
     },
     "Natal": {
         lat: -5.7945,
         lng: -35.2099,
         links: {
-            "Provedor I": "201.65.7.38",
-            "Provedor J": "200.203.134.106"
+           
         }
     },
     "Campo Grande": {
         lat: -20.4697,
         lng: -54.6201,
         links: {
-            "Provedor K": "168.90.211.254",
-            "Provedor L": "168.196.66.134"
+            
         }
     },
     "Cuiabá": {
         lat: -15.5989,
         lng: -56.0949,
         links: {
-            "Provedor M": "177.202.211.10",
-            "Provedor N": "189.16.199.114"
+           
         }
     },
     "Goiânia": {
         lat: -16.6809,
         lng: -49.2533,
         links: {
-            "Provedor O": "177.177.97.106",
-            "Provedor P": "177.54.240.22"
+           
         }
     },
     "Belo Horizonte": {
         lat: -19.9167,
         lng: -43.9345,
         links: {
-            "Provedor Q": "201.32.52.90",
-            "Provedor R": "186.227.183.242",
-            "Provedor S": "177.126.125.82"
+           
         }
     },
     "Curitiba": {
         lat: -25.4284,
         lng: -49.2733,
         links: {
-            "Provedor T": "201.64.185.130",
-            "Provedor U": "201.15.149.146"
+            
         }
     },
     "Florianópolis": {
         lat: -27.5969,
         lng: -48.5486,
         links: {
-            "Provedor V": "200.153.31.250",
-            "Provedor W": "187.28.122.138"
+           
         }
     },
     "Porto Alegre": {
         lat: -30.0346,
         lng: -51.2177,
         links: {
-            "Provedor X": "200.150.72.254"
+            
         }
     },
     "Boa Vista": {
         lat: 2.8195,
         lng: -60.6733,
         links: {
-            "Provedor Y": "201.2.200.38"
+            
         }
     }
 };
